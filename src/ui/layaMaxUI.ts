@@ -3,6 +3,16 @@ import View=Laya.View;
 import Dialog=Laya.Dialog;
 import Scene=Laya.Scene;
 export module ui.test {
+    export class IndexSceneUI extends Scene {
+		public title:Laya.Label;
+		public createBtn:Laya.Label;
+		public advanceBtn:Laya.Label;
+        constructor(){ super()}
+        createChildren():void {
+            super.createChildren();
+            this.loadScene("test/IndexScene");
+        }
+    }
     export class TestSceneUI extends Scene {
 		public scoreLbl:Laya.Label;
 		public tipLbll:Laya.Label;
@@ -12,4 +22,4 @@ export module ui.test {
             this.loadScene("test/TestScene");
         }
     }
-}
+}
