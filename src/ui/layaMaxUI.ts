@@ -4,9 +4,10 @@ import Dialog=Laya.Dialog;
 import Scene=Laya.Scene;
 export module ui.test {
     export class IndexSceneUI extends Scene {
-		public title:Laya.Label;
-		public createBtn:Laya.Label;
-		public advanceBtn:Laya.Label;
+		public map:Laya.Sprite;
+		public player:Laya.Label;
+		public house1:Laya.Label;
+		public house2:Laya.Label;
         constructor(){ super()}
         createChildren():void {
             super.createChildren();
